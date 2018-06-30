@@ -48,7 +48,7 @@ function reset(){
   wrongGuess=[];
   wins = 0;
   losses = 0;
-  numberGuesses=5;
+  numberGuesses=15;
   
 }
 // Create underscores based on length of word
