@@ -31,7 +31,7 @@ function start(){
   underScore =[];
   rightGuess=[];
   wrongGuess=[];
-  numberGuesses=5;
+  numberGuesses=15;
 
   arrToLower = String.prototype.toLowerCase.apply(words).split(",");
   choosenWord = arrToLower[Math.floor(Math.random() * arrToLower.length)];
