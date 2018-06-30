@@ -18,7 +18,7 @@ var choosenWord;
 var rightGuess = [];
 var wrongGuess = [];
 var underScore = [];
-var numberGuesses = 5;
+var numberGuesses = 15;
 var wins = 0;
 var losses = 0;
 
@@ -94,7 +94,7 @@ for (var i = 0; i < choosenWord.length; i++) {
   }
   else if(numberGuesses === 0 ){
     losses++;
-    alert("Game Over");
+    alert("You Ran Out of Guesses");
     document.getElementById("losses").innerHTML = losses;
     start();
     
