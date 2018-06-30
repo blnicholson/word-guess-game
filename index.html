@@ -1,26 +1,134 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <title>Hangman!</title>
-   
-    <link rel = "stylesheet" href = "assets/css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman Game</title>
+    <!--Reset-->
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+
+    <!--Favicon-->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/images/question_mark_favicon.png"> -->
+
+    <!--Bootstrap CSS CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!--Local CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
+</head>
+
+<body>
+
+    <!--Header-->
+    <nav class="navbar nav justify-content-center">
+        <span class="navbar-brand mb-0 h1">Hangman: Video Game Edition</span>
+    </nav>
+
+    <!--Main Game Body-->
     <div class="container">
-      <header>
-        <h1>Hangman Game</h1>
-        <h3>Video Games</h3>
-      </header>
-      
-      <div class="underscores">_ _ _ _</div>
-      
-      <div class="rightGuess">Right Guesses</div>
-      
-      <div class="wrongGuess">Wrong Guesses</div>
+        <!--First Row-->
+        <div class="row">
+            <!--Column 1-->
+            <div class="col-md-2">
+                <div id="arcade" class="card">
+                    <div class="card-body">
+                        <img src="assets/images/arcades.jpg" alt=Arcade class="img-thumbnail">
+                    </div>
+                </div>
+            </div>
+            <!--Column 2-->
+            <div class="col-md-8">
+                <div id="underscores" class="card text-center game-board">
+                    <div class="card-body">
+                        <p>Game Board</p>
+                    </div>
+                </div>
+            </div>
+            <!--Column 3-->
+            <div class="col-md-2 poster">
+                <div class=" card arcade-card " style="width: 18rem; ">
+                    <div class="card-body">
+                        <img class="card-img-top " src="assets/images/MK.png" width="100" height="250" alt="arcade " class="img-thumbnail">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--Second Row Win Lose Guesses Remaining-->
+        <div class="row">
+
+            <div class="col-md-3 ">
+                <div class="card win-counter">
+                    <div id="wins" class="card-body ">
+
+                    </div>
+
+                    <div class="card-footer">
+                        Wins
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card lose-counter">
+                    <div id="losses" class="card-body">
+                    </div>
+                    <div class="card-footer">
+                        Losses
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card guesses-remaining ">
+                    <div id=wrongGuess class="card-body ">
+
+                    </div>
+                    <div class="card-footer">
+                        Letters Guessed
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div id="remaining" class="card">
+                    <div class="card-body">
+                        guesses
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div row>
+            <div class="col-md=12">
+                <img id="gameStart" onclick="start()" src="assets/images/coin2.jpg" width="150" height="150" class="img-thumbnail">
+                 <h6>Press To start</h6>
+            </div>
+        </div>
     </div>
 
-    <script src = "assets/javascript/game.js"></script>
-  </body>
+
+
+
+
+    <!--Footer-->
+    <nav class="navbar fixed-bottom">
+        <a class="navbar-brand navbar-text ">
+            <!-- <img src="assets/images/question_mark_favicon.png " width="30 " height="30 " alt="Question Mark "> -->
+        </a>
+        <span class="navbar-text ">
+            Word Guess Game Copyright &#169
+        </span>
+    </nav>
+
+    <!--Local JavaScript-->
+    <script rel="text/javascript " src="assets/javascript/game.js"></script>
+
+</body>
+
 </html>
