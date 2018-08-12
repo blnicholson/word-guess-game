@@ -14,5 +14,5 @@ This app was created by using the following:
 * HTML
 * CSS
 
-![Alt text](assets/image/wordGuessGame.PNG
+![Alt text](assets/images/wordGuessGame.PNG
 
