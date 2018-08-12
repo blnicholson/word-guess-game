@@ -13,6 +13,6 @@ This app was created by using the following:
 * JavaScript
 * HTML
 * CSS
-## **Game Images **
+## **Game Images**
 ![Alt text](assets/images/wordGuessGame.PNG)
 
